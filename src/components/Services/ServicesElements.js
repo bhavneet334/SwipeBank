@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ServicesContainer = styled.div`
-   height:1000px;
+   height:900px;
    display:flex;
    flex-direction:column;
    justify-content:center;
@@ -9,32 +9,34 @@ export const ServicesContainer = styled.div`
    background:#010606;
    padding:0;
 
-   @media screen and (max-width:768px){
+   @media screen and (max-width:1000px){
+       height:1300px;
+   }
+   @media screen and (max-width:780px){
        height:2100px;
    }
    @media screen and (max-width:480px){
-       height:1100px;
+       height:1200px;
    }
 `;
 
 export const ServicesWrapper = styled.div`
    max-width:1000px;
-   height:800px;
-   margin:0 auto;
+   margin-bottom:20px;
    display:grid;
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows:1fr 1fr;
+   grid-template-columns:1fr 1fr 1fr;
    align-items: center;
-   grid-gap: 16px;
+   grid-gap:14px;
    padding:0 50px;
-   /* border:2px solid red; */
 
    @media screen and (max-width:1000px){
+      grid-template-rows:repeat(3,1fr);
       grid-template-columns: 1fr 1fr;
    }
    @media screen and (max-width:768px){
+     grid-template-rows:repeat(6,1fr);
      grid-template-columns: 1fr;
-     padding:0 20px;
    }
 `;
 
@@ -49,8 +51,7 @@ export const ServicesCard = styled.div`
     padding:30px;
     box-shadow:0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-    margin-bottom: 0px;
-    /* border:2px solid red; */
+    margin: 0px;
 
 
     &:hover{
@@ -58,6 +59,7 @@ export const ServicesCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor:pointer;
     }
+
 `;
 
 export const ServicesIcon = styled.img`
@@ -69,11 +71,12 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color:#fff;
-    margin-top: 64px;
-    margin-bottom:64px;
+    margin-bottom:100px;
 
-    @media screen and (max-width:480px){
+    @media screen and (max-width:700px){
         font-size:2rem;
+        margin-top:0;
+        margin-bottom:20px;
     }
 `;
 
