@@ -51,7 +51,6 @@ const Services = () => {
                   <ServicesH2>MOBILE BANKING</ServicesH2>
                   <ServicesP>You can acess our platform online anywhere in the world.</ServicesP>
               </ServicesCard>
-              
            </ServicesWrapper>
         </ServicesContainer>
     )
